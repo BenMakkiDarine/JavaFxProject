@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="VotreSujet" prefHeight="586.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUN.VotreSujetController">
+   <children>
+      <AnchorPane fx:id="Votresujet" layoutX="6.0" layoutY="6.0" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="25.0" layoutY="-7.0" prefHeight="69.0" prefWidth="295.0" text="Votre Sujet" textFill="#41ccc0" underline="true">
+               <font>
+                  <Font name="Segoe Script" size="43.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableview" blendMode="DARKEN" layoutX="7.0" layoutY="65.0" prefHeight="182.0" prefWidth="979.0">
+              <columns>
+                <TableColumn fx:id="titrec" prefWidth="75.0" text="sujet" />
+                <TableColumn fx:id="sujetc" prefWidth="75.0" text="forum" />
+                  <TableColumn fx:id="crec" prefWidth="75.0" text="crée par" />
+                  <TableColumn fx:id="desc" prefWidth="479.0" text="Description" />
+              </columns>
+            </TableView>
+            <TextField fx:id="creeS" layoutX="89.0" layoutY="335.0" prefHeight="25.0" prefWidth="233.0" />
+            <TextArea fx:id="desS" layoutX="25.0" layoutY="434.0" prefHeight="93.0" prefWidth="546.0" />
+            <Label layoutX="13.0" layoutY="250.0" prefHeight="17.0" prefWidth="64.0" text="Forum :" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="15.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="288.0" prefHeight="17.0" prefWidth="55.0" text="Sujet :" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="16.0" />
+               </font></Label>
+            <Label layoutX="7.0" layoutY="330.0" text="crée par :" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="15.0" />
+               </font></Label>
+            <Label layoutX="6.0" layoutY="400.0" prefHeight="28.0" prefWidth="108.0" text="Description:" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="15.0" />
+               </font></Label>
+            <Button fx:id="ajouter1" layoutX="464.0" layoutY="535.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="44.0" prefWidth="172.0" text="Valider" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="18.0" />
+               </font></Button>
+            <Button layoutX="765.0" layoutY="300.0" mnemonicParsing="false" onAction="#modifier" prefHeight="33.0" prefWidth="149.0" text="Modifier" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Script" size="17.0" />
+               </font></Button>
+            <Button layoutX="772.0" layoutY="378.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="33.0" prefWidth="150.0" text="Supprimer" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="17.0" />
+               </font></Button>
+            <Button layoutX="772.0" layoutY="458.0" mnemonicParsing="false" onAction="#afficher" prefHeight="33.0" prefWidth="150.0" text="Afficher" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Script" size="18.0" />
+               </font></Button>
+            <Label layoutX="607.0" layoutY="267.0" prefHeight="22.0" prefWidth="209.0" text="selectionner la ligne à :" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="12.0" />
+               </font></Label>
+            <TextField fx:id="sujs" layoutX="89.0" layoutY="292.0" prefHeight="25.0" prefWidth="233.0" />
+            <Button fx:id="retou" layoutX="874.0" layoutY="17.0" mnemonicParsing="false" onAction="#retour" prefHeight="33.0" prefWidth="79.0" text="Retour" textFill="#76bfc1" />
+            <ComboBox fx:id="forumS" layoutX="88.0" layoutY="255.0" prefHeight="25.0" prefWidth="233.0" />
+            <TextField fx:id="dates" layoutX="89.0" layoutY="371.0" prefHeight="25.0" prefWidth="233.0" promptText="jj/mm/yy" />
+            <Label layoutX="7.0" layoutY="361.0" prefHeight="17.0" prefWidth="49.0" text="date:" textFill="#179a7e">
+               <font>
+                  <Font name="Segoe Print" size="17.0" />
+               </font></Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

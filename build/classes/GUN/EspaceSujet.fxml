@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUN.EspaceSujetController">
+   <children>
+      <AnchorPane fx:id="espacesujet" layoutX="4.0" layoutY="7.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: 3ADD8E6;">
+         <children>
+            <Label layoutY="-6.0" prefHeight="119.0" prefWidth="348.0" text="Espace Sujet :" textFill="#41ccc0">
+               <font>
+                  <Font name="Segoe Script" size="47.0" />
+               </font>
+            </Label>
+            <Label layoutX="501.0" layoutY="15.0" prefHeight="37.0" prefWidth="129.0" text="Recherche:" textFill="#76bfc1">
+               <font>
+                  <Font name="Vani" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="recherche" layoutX="642.0" layoutY="18.0" onKeyPressed="#rech" opacity="0.76" prefHeight="30.0" prefWidth="182.0" promptText="veuillez saisir le theme " />
+            <TableView fx:id="tableview" blendMode="MULTIPLY" layoutX="9.0" layoutY="99.0" prefHeight="342.0" prefWidth="967.0">
+              <columns>
+                <TableColumn fx:id="titrC" prefWidth="108.0" text="Titre" />
+                <TableColumn fx:id="desC" prefWidth="143.0" text="Theme" />
+                  <TableColumn fx:id="creeC" prefWidth="145.0" text="Crée par " />
+                  <TableColumn fx:id="DesCss" prefWidth="568.0" text="Description" />
+              </columns>
+            </TableView>
+            <Button fx:id="com" layoutX="385.0" layoutY="458.0" mnemonicParsing="false" onAction="#commenter" prefHeight="74.0" prefWidth="236.0" text="Votre Commentaire" textFill="#31aab2">
+               <font>
+                  <Font name="Viner Hand ITC" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="suj" layoutX="683.0" layoutY="458.0" mnemonicParsing="false" onAction="#sujet" prefHeight="74.0" prefWidth="255.0" text="Votre Sujet" textFill="#31aab2">
+               <font>
+                  <Font name="Viner Hand ITC" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="act" layoutX="870.0" layoutY="61.0" mnemonicParsing="false" onAction="#Actualiser" prefHeight="30.0" prefWidth="77.0" text="Actualiser" textFill="#76bfc1">
+               <font>
+                  <Font name="Arial Unicode MS" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="retou" layoutX="870.0" layoutY="20.0" mnemonicParsing="false" onAction="#retour" prefHeight="30.0" prefWidth="77.0" text="Retour" textFill="#76bfc1">
+               <font>
+                  <Font name="Vani" size="12.0" />
+               </font></Button>
+            <Button fx:id="cons" layoutX="47.0" layoutY="458.0" mnemonicParsing="false" onAction="#counsulter" prefHeight="74.0" prefWidth="297.0" text="Consulter tous les commentaires " textFill="#31aab2">
+               <font>
+                  <Font name="Viner Hand ITC" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="rechf" layoutX="642.0" layoutY="56.0" onKeyPressed="#rechrf" prefHeight="30.0" prefWidth="182.0" promptText="veuillez saisir le forum" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

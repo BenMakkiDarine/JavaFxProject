@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUN.ConsulterLesCommentairesController">
+   <children>
+      <AnchorPane fx:id="consulterCom" layoutX="8.0" layoutY="3.0" prefHeight="587.0" prefWidth="992.0">
+         <children>
+            <TableView fx:id="tableview" layoutX="6.0" layoutY="73.0" prefHeight="439.0" prefWidth="974.0">
+              <columns>
+                <TableColumn fx:id="namec" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="sujetc" prefWidth="75.0" text="Sujet" />
+                  <TableColumn fx:id="datec" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="reponsesc" prefWidth="503.0" text="Réponses" />
+              </columns>
+            </TableView>
+            <Label layoutY="-6.0" prefHeight="57.0" prefWidth="374.0" text="Espace Des Réponses" textFill="#41ccc0" underline="true">
+               <font>
+                  <Font name="Segoe Print" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="575.0" layoutY="19.0" text="Rechercher :" textFill="#41ccc0">
+               <font>
+                  <Font name="Segoe Print" size="15.0" />
+               </font></Label>
+            <TextField fx:id="rech" layoutX="698.0" layoutY="21.0" onAction="#rechercher" prefHeight="25.0" prefWidth="163.0" promptText="rechecher par sujet" />
+            <Button fx:id="ret" layoutX="890.0" layoutY="8.0" mnemonicParsing="false" onAction="#retourner" prefHeight="25.0" prefWidth="74.0" text="retour" textFill="#4a9ec4">
+               <font>
+                  <Font name="Webdings" size="12.0" />
+               </font></Button>
+            <Button fx:id="act" layoutX="890.0" layoutY="42.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="25.0" prefWidth="74.0" text="Actualiser" textFill="#4a9ec4">
+               <font>
+                  <Font name="Wingdings" size="12.0" />
+               </font></Button>
+            <Button layoutX="801.0" layoutY="523.0" mnemonicParsing="false" onAction="#signale" prefHeight="25.0" prefWidth="149.0" text="signaler" textFill="#44b6eb">
+               <font>
+                  <Font name="Segoe Print" size="20.0" />
+               </font></Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

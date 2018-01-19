@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUN.StatistiqueController">
+   <children>
+      <AnchorPane fx:id="stat" layoutX="18.0" layoutY="16.0" prefHeight="568.0" prefWidth="947.0">
+         <children>
+            <PieChart fx:id="piechart" layoutX="43.0" layoutY="84.0" prefHeight="454.0" prefWidth="881.0" title="Pourcentage des Reactions selon les forums" />
+            <Button fx:id="ret" layoutX="828.0" layoutY="14.0" mnemonicParsing="false" onAction="#retou" prefHeight="25.0" prefWidth="87.0" text="retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

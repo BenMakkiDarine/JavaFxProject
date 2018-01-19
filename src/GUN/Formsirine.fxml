@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="forum" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUN.FormsirineController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="15.0" prefHeight="538.0" prefWidth="726.0" />
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="-1.0">
+         <image>
+            <Image url="file:/C:/Users/hp/Desktop/randonnee.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="go" blendMode="SRC_ATOP" layoutX="269.0" layoutY="193.0" mnemonicParsing="false" onAction="#goo" prefHeight="118.0" prefWidth="429.0" text="Decouvrir" textFill="#6abbdd">
+         <font>
+            <Font name="Segoe Print" size="48.0" />
+         </font>
+      </Button>
+      <Label blendMode="COLOR_DODGE" layoutX="75.0" layoutY="15.0" prefHeight="67.0" prefWidth="783.0" text="BINEVENUE DANS VOTRE FORUM " textFill="#92d7cff7">
+         <font>
+            <Font name="Segoe Print" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="statistique" layoutX="75.0" layoutY="365.0" mnemonicParsing="false" onAction="#satat" prefHeight="97.0" prefWidth="847.0" text="Decouvrir  les forums les plus recommandées" textFill="#406f9a">
+         <font>
+            <Font name="Segoe Print" size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
